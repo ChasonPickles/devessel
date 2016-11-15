@@ -320,6 +320,7 @@
                                 <state key="normal" title="BYE BYE"/>
                                 <connections>
                                     <action selector="logOut" destination="qrQ-Iz-7zB" eventType="touchUpInside" id="Bdt-sk-cQj"/>
+                                    <segue destination="Vh1-6c-guU" kind="show" identifier="logOut" id="k2F-BE-bg8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -333,9 +334,6 @@
                             <constraint firstItem="ZQu-E9-R3D" firstAttribute="top" secondItem="2ad-uf-N1r" secondAttribute="bottom" constant="8" symbolic="YES" id="vso-TV-h4f"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="WeQ-uy-SXg" kind="show" identifier="logOut" id="cdO-Ck-4g4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SWR-2D-pSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,7 +377,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cdO-Ck-4g4"/>
-        <segue reference="j0G-9Z-X3q"/>
+        <segue reference="swM-Zw-woQ"/>
     </inferredMetricsTieBreakers>
 </document>
