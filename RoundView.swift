@@ -17,5 +17,25 @@ class RoundView: UIView {
         // Drawing code
     }
     */
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.layer.cornerRadius = self.bounds.width/2
+        self.layer.masksToBounds = true
+        self.addBorder(toEdges: [.all])
+    }
+    
+    func add(image : UIImage){
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
 
+        imageView.image = image
+
+        self.addSubview(imageView)
+        imageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+    }
 }

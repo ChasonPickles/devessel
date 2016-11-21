@@ -15,6 +15,7 @@
 		730A2BC41DC0492100FE9681 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730A2BC31DC0492100FE9681 /* LoginViewController.swift */; };
 		7325A3861DDAD7C80029191D /* RoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325A3851DDAD7C80029191D /* RoundView.swift */; };
 		7325A3881DDAE1DB0029191D /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7325A3871DDAE1DB0029191D /* LogOutViewController.swift */; };
+		73C11A541DE21CB700BA9004 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C11A531DE21CB700BA9004 /* UIViewExtension.swift */; };
 		73FE12F81DD9466200FDDEC3 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE12F71DD9466200FDDEC3 /* HubViewController.swift */; };
 		73FE12FA1DD957AE00FDDEC3 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +29,9 @@
 		730A2BBB1DC0458200FE9681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		730A2BBD1DC0458200FE9681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		730A2BC31DC0492100FE9681 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7325A3851DDAD7C80029191D /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundView.swift; sourceTree = "<group>"; };
-		7325A3871DDAE1DB0029191D /* LogOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		7325A3851DDAD7C80029191D /* RoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundView.swift; path = ../RoundView.swift; sourceTree = "<group>"; };
+		7325A3871DDAE1DB0029191D /* LogOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogOutViewController.swift; path = ../LogOutViewController.swift; sourceTree = "<group>"; };
+		73C11A531DE21CB700BA9004 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		73FE12F71DD9466200FDDEC3 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
 		73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,8 +50,6 @@
 		730A2BA51DC0458200FE9681 = {
 			isa = PBXGroup;
 			children = (
-				7325A3851DDAD7C80029191D /* RoundView.swift */,
-				7325A3871DDAE1DB0029191D /* LogOutViewController.swift */,
 				730A2BB01DC0458200FE9681 /* Rockette */,
 				730A2BAF1DC0458200FE9681 /* Products */,
 			);
@@ -66,17 +66,44 @@
 		730A2BB01DC0458200FE9681 /* Rockette */ = {
 			isa = PBXGroup;
 			children = (
+				73C11A551DE2217500BA9004 /* ViewControllers */,
+				73C11A521DE21C9B00BA9004 /* Extensions */,
+				73C11A511DE21BE400BA9004 /* Views */,
 				730A2BB11DC0458200FE9681 /* AppDelegate.swift */,
 				730A2BB31DC0458200FE9681 /* ViewController.swift */,
 				730A2BB51DC0458200FE9681 /* Main.storyboard */,
-				73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */,
-				73FE12F71DD9466200FDDEC3 /* HubViewController.swift */,
-				730A2BC31DC0492100FE9681 /* LoginViewController.swift */,
 				730A2BB81DC0458200FE9681 /* Assets.xcassets */,
 				730A2BBA1DC0458200FE9681 /* LaunchScreen.storyboard */,
 				730A2BBD1DC0458200FE9681 /* Info.plist */,
 			);
 			path = Rockette;
+			sourceTree = "<group>";
+		};
+		73C11A511DE21BE400BA9004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7325A3851DDAD7C80029191D /* RoundView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		73C11A521DE21C9B00BA9004 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73C11A531DE21CB700BA9004 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		73C11A551DE2217500BA9004 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7325A3871DDAE1DB0029191D /* LogOutViewController.swift */,
+				73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */,
+				73FE12F71DD9466200FDDEC3 /* HubViewController.swift */,
+				730A2BC31DC0492100FE9681 /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 				73FE12FA1DD957AE00FDDEC3 /* MoreInfoViewController.swift in Sources */,
 				730A2BB41DC0458200FE9681 /* ViewController.swift in Sources */,
 				730A2BB21DC0458200FE9681 /* AppDelegate.swift in Sources */,
+				73C11A541DE21CB700BA9004 /* UIViewExtension.swift in Sources */,
 				7325A3881DDAE1DB0029191D /* LogOutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

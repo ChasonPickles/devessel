@@ -12,7 +12,10 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        login.layer.borderWidth = 1.0
+        login.layer.borderColor = UIColor.black.cgColor
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,6 +23,9 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBOutlet weak var login: UIButton!
+    
     
     @IBAction func logInPressed(_ sender: UIButton) {
         performSegue(withIdentifier: "goToHub", sender: self)
