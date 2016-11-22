@@ -15,7 +15,9 @@ class LoginViewController: UIViewController {
         
         login.layer.borderWidth = 1.0
         login.layer.borderColor = UIColor.black.cgColor
-        
+        self.navigationController!.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         // Do any additional setup after loading the view.
     }
 

@@ -19,11 +19,21 @@ class HubViewController: UIViewController {
     
     @IBOutlet weak var cornerCircle: RoundView!
     @IBOutlet weak var buttonsContainer: UIStackView!
+    
+    @IBOutlet weak var questionSVContainer: UIView!
+    @IBOutlet weak var settingsSVContainer: UIView!
+    @IBOutlet weak var reflectionsSVContainer: UIView!
+    @IBOutlet weak var logOutSVContainer: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addBordersToButtons()
        self.view.insertSubview(cornerCircle, aboveSubview: buttonsContainer)
+        settingsSVContainer.addBorder(toEdges: [.left, .bottom], colour: UIColor.black, thickness: 2.0)
+        questionSVContainer.addBorder(toEdges: [.right, .bottom], colour: UIColor.black, thickness: 2.0)
+        reflectionsSVContainer.addBorder(toEdges: [.right, .top], colour: UIColor.black, thickness: 2.0)
+        logOutSVContainer.addBorder(toEdges: [.left, .top], colour: UIColor.black, thickness: 2.0)
+        
 //        setRoundIconToCenterOfButtonContainer()
 //        roundIcon.heightAnchor.constraint(equalToConstant: 150.0).isActive = true
 //        roundIcon.widthAnchor.constraint(equalToConstant: 150.0).isActive = true
