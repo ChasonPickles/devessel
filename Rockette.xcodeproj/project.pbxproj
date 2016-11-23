@@ -18,6 +18,7 @@
 		73C11A541DE21CB700BA9004 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C11A531DE21CB700BA9004 /* UIViewExtension.swift */; };
 		73FE12F81DD9466200FDDEC3 /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE12F71DD9466200FDDEC3 /* HubViewController.swift */; };
 		73FE12FA1DD957AE00FDDEC3 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */; };
+		A6CD3B131DE51A7F0097F5F0 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CD3B121DE51A7F0097F5F0 /* AppStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		73C11A531DE21CB700BA9004 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		73FE12F71DD9466200FDDEC3 /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
 		73FE12F91DD957AE00FDDEC3 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		A6CD3B121DE51A7F0097F5F0 /* AppStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +68,9 @@
 		730A2BB01DC0458200FE9681 /* Rockette */ = {
 			isa = PBXGroup;
 			children = (
-				73C11A551DE2217500BA9004 /* ViewControllers */,
-				73C11A521DE21C9B00BA9004 /* Extensions */,
-				73C11A511DE21BE400BA9004 /* Views */,
+				A6CD3B111DE519E90097F5F0 /* Models */,
+				A6CD3B0E1DE519AD0097F5F0 /* Utils */,
+				A6CD3B0D1DE519A20097F5F0 /* UI */,
 				730A2BB11DC0458200FE9681 /* AppDelegate.swift */,
 				730A2BB31DC0458200FE9681 /* ViewController.swift */,
 				730A2BB51DC0458200FE9681 /* Main.storyboard */,
@@ -104,6 +106,39 @@
 				730A2BC31DC0492100FE9681 /* LoginViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6CD3B0D1DE519A20097F5F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				73C11A511DE21BE400BA9004 /* Views */,
+				73C11A551DE2217500BA9004 /* ViewControllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A6CD3B0E1DE519AD0097F5F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD3B0F1DE519C20097F5F0 /* SharedInstances */,
+				73C11A521DE21C9B00BA9004 /* Extensions */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A6CD3B0F1DE519C20097F5F0 /* SharedInstances */ = {
+			isa = PBXGroup;
+			children = (
+				A6CD3B121DE51A7F0097F5F0 /* AppStyle.swift */,
+			);
+			name = SharedInstances;
+			sourceTree = "<group>";
+		};
+		A6CD3B111DE519E90097F5F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +219,7 @@
 				73FE12FA1DD957AE00FDDEC3 /* MoreInfoViewController.swift in Sources */,
 				730A2BB41DC0458200FE9681 /* ViewController.swift in Sources */,
 				730A2BB21DC0458200FE9681 /* AppDelegate.swift in Sources */,
+				A6CD3B131DE51A7F0097F5F0 /* AppStyle.swift in Sources */,
 				73C11A541DE21CB700BA9004 /* UIViewExtension.swift in Sources */,
 				7325A3881DDAE1DB0029191D /* LogOutViewController.swift in Sources */,
 			);
