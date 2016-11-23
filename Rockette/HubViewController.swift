@@ -29,10 +29,10 @@ class HubViewController: UIViewController {
         super.viewDidLoad()
         addBordersToButtons()
        self.view.insertSubview(cornerCircle, aboveSubview: buttonsContainer)
-        settingsSVContainer.addBorder(toEdges: [.left, .bottom], colour: UIColor.black, thickness: 2.0)
-        questionSVContainer.addBorder(toEdges: [.right, .bottom], colour: UIColor.black, thickness: 2.0)
-        reflectionsSVContainer.addBorder(toEdges: [.right, .top], colour: UIColor.black, thickness: 2.0)
-        logOutSVContainer.addBorder(toEdges: [.left, .top], colour: UIColor.black, thickness: 2.0)
+        settingsSVContainer.addBorder(toEdges: [.left, .bottom], colour: UIColor.black, thickness: 1.0)
+        questionSVContainer.addBorder(toEdges: [.right, .bottom], colour: UIColor.black, thickness: 1.0)
+        reflectionsSVContainer.addBorder(toEdges: [.right, .top], colour: UIColor.black, thickness: 1.0)
+        logOutSVContainer.addBorder(toEdges: [.left, .top], colour: UIColor.black, thickness: 1.0)
         
 //        setRoundIconToCenterOfButtonContainer()
 //        roundIcon.heightAnchor.constraint(equalToConstant: 150.0).isActive = true

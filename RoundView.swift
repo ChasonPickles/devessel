@@ -20,9 +20,14 @@ class RoundView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.layer.cornerRadius = self.bounds.width/2
+        
+        self.layer.cornerRadius = min(self.frame.size.width, self.frame.size.height) / 2.0
         self.layer.masksToBounds = true
+        self.clipsToBounds = true
+//        self.frame = self.bounds
+//        self.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addBorder(toEdges: [.all])
     }
     
